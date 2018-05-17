@@ -5,7 +5,6 @@ class Graphpath < Formula
   sha256 "9e018bbb44f748595d4eb030896ccc195a9a75db773160da480743f31b5b8272"
 
   def install
-
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
