@@ -3,16 +3,16 @@ class Graphpath < Formula
   homepage "https://bsdrp.net/"
   url "https://github.com/ocochard/graphpath/archive/v1.0.tar.gz"
   sha256 "9e018bbb44f748595d4eb030896ccc195a9a75db773160da480743f31b5b8272"
+  head "https://github.com/ocochard/graphpath.git"
+
+  bottle :unneeded
 
   def install
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
-    system "make", "install"
+    bin.install "graphpath" => "graphpath"
   end
 
   test do
-    system "script", "-q", "/dev/null", bin/"graphpath"
+    system "#{bin}/graphpath", "-v"
   end
 end
+
