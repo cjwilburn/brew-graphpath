@@ -3,7 +3,6 @@ class Graphpath < Formula
   homepage "https://bsdrp.net/"
   url "https://github.com/ocochard/graphpath/archive/v1.1.tar.gz"
   sha256 "b6a773d4087fb1659ff5c20f28516b85e0615765"
-  head "https://github.com/ocochard/graphpath.git"
 
   bottle :unneeded
 
