@@ -1,8 +1,9 @@
 class Graphpath < Formula
   desc "Generates ASCII network diagram from the route table of a Unix/Linux"
   homepage "https://bsdrp.net/"
-  url "https://github.com/ocochard/graphpath/archive/v1.1.tar.gz"
-  sha256 "b6a773d4087fb1659ff5c20f28516b85e0615765"
+  url "https://github.com/ocochard/graphpath/archive/v1.2.tar.gz"
+  sha256 "b41603871d232f266a82e2a123e8b95387a42bba"
+  head "https://github.com/ocochard/graphpath.git"
 
   bottle :unneeded
 
@@ -11,6 +12,6 @@ class Graphpath < Formula
   end
 
   test do
-    system "#{bin}/graphpath", "-v"
+    system "#{bin}/graphpath", "198.18.0.10 198.19.0.10"
   end
 end
